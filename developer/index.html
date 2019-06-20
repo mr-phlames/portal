@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing the future of effortless and cashless transactions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Portal Developers</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="portal-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row ">
+          <span class="portal-title mdl-layout-title">
+            <img class="portal-logo-image" src="images/portal-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="portal-header-spacer mdl-layout-spacer"></div>
+          <div class="portal-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" placeholder="search for products" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="portal-navigation-container">
+            <nav class="portal-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Intro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="products.html">Our Products</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="faq.html">FAQ</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../auth/reg-normal.html">Register</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../auth/login.html">Login</a>
+            </nav>
+          </div>
+          <span class="portal-mobile-title mdl-layout-title" style="margin-left: 50px;">            
+            <img class="portal-logo-image" src="images/portal-logo.png"> 
+          </span>
+          <button class="portal-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item"><a class="portal-link" href="index.html">Developer</a></li>
+            <li class="mdl-menu__item"><a class="portal-link" href="../business/index.html">Business</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="portal-drawer mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="#intro">What is Portal</a>
+          <a class="mdl-navigation__link" href="#">Portal Online</a>
+          <a class="mdl-navigation__link" href="#">Portal Pay</a>
+          <a class="mdl-navigation__link" href="faq.html">FAQ</a>
+          <a class="mdl-navigation__link" href="contact.html">Contact</a>
+          <div class="portal-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="../auth/login.html">Login</a>
+          <a class="mdl-navigation__link" href="../auth/reg-normal.html">Register</a>
+          <div class="portal-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="index.html">Portal For Developers</a>
+			    <a class="mdl-navigation__link" href="../business/index.html">Portal For Businesses</a>
+          <a class="mdl-navigation__link" href="">Official blog</a>
+          <div class="portal-drawer-separator"></div>
+          <a class="mdl-navigation__link" href="#">Portal on Twitter</a>
+          <a class="mdl-navigation__link" href="#">Portal on Facebook</a>
+          <a class="mdl-navigation__link" href="#">Portal on Instagram</a>
+        </nav>
+      </div>
+
+      <div class="portal-content mdl-layout__content" id="#intro">
+        <a name="top"></a>
+        <div class="portal-be-together-section mdl-typography--text-center">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="logo-font portal-slogan">Portal { dev } Tools</div>
+          <div class="logo-font portal-sub-slogan">.....</div>
+          <br>
+          <br>
+          <center>            
+            <a href="dev/create.html" style="background: white; padding: 15px; color: black; text-decoration: none; border-radius: 7px;">Let's build something</a>         
+          </center>
+        
+          <a href="#screens">
+            <button class="portal-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+
+        <div class="portal-customized-section">
+          <div class="portal-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Build with Portal Dev</div>
+            <p class="mdl-typography--font-light">
+              Portal dev provides you with tools which enable you to build, manage and earn cash from your apps and websites. We offer a wide variety of sytems for your use, feel free to try our tools  .
+              <br>
+			      	<br>
+              <a href="" class="portal-link mdl-typography--font-light stand-out">GET STARTED NOW</a>
+            </p>
+          </div>
+          <div class="portal-customized-section-image"></div>
+        </div>
+        <div class="portal-more-section">
+          <div class="portal-section-title mdl-typography--display-1-color-contrast">Our Dev Tools</div>
+          <div class="portal-card-container mdl-grid">
+
+			   <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/services/online.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Portal O API</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">This is Portal's main API which allows developers to hook into some core functionality of our platform including authentication, wallet management and user information</span>
+              </div>
+              <div class="mdl-card__actions" style="display: flex; justify-content: flex-start;">
+                 <a class="portal-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Build with Portal O API
+                 </a>
+              </div>
+            </div>
+
+			 <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/services/analytics.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Portal Developer Analytics</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Portal analytics gives you a precise visual breakdown of all the activity on your website or app in charts and statistical values. Track user interactions on your platform</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="portal-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Get Started
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/services/pay.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Portal Pay API</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Portal Pay API allows developers to handle payments using Portal Pay™. Portal Pay payments include online checkouts, donations and other online payments</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="portal-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Accept Portal Pay
+					</a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/services/ads.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">adsMAN dev ™</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">The easiest way to monetise your app or website. Add adsMan to your platform and get paid per number of click...choose an ads style that suits your platform now.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="portal-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   integrate adsMAN dev™
+                 </a>
+              </div>
+				</div>
+
+				<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/services/pbt.jpg">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Business Talks API</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Business talks API allows developers to get posts, comments and news from Portal Business Talks. Display discussions based on topics, rating, users and even randomly.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="portal-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   integrate PBT dev
+                 </a>
+              </div>
+            </div>
+
+        </div>
+
+        <footer class="portal-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">
+					© <script>document.write(new Date().getFullYear());</script> <br>
+					Portal Network	<br>
+					All Rights Reserved
+			  </p>
+            <p class="mdl-typography--font-light">Some features may not be available in all devices.</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="portal-link portal-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">Portal API</li>
+              <li class="mdl-menu__item">Portal Pay Gateway</li>
+              <li class="mdl-menu__item">Portal Pay SDK</li>
+              <li class="mdl-menu__item">Portal Widgets</li>
+            </ul>
+            <a class="portal-link mdl-typography--font-light" href="">Blog</a>
+            <a class="portal-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

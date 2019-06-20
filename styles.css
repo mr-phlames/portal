@@ -1,0 +1,601 @@
+
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+::selection {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.portal-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.portal-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.mdl-layout__drawer-button {
+  display: none;
+}
+
+.portal-call-to-action {
+  background: white; 
+  padding: 15px; 
+  color: black; 
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.portal-login-space {
+  padding: 150px 0px;
+}
+
+.portal-auth-title {
+  color: #757575;
+}
+
+.portal-auth-wrapper {
+  padding: 20px 0px !important;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.portal-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #2196F3 !important;
+  color: white !important;
+}
+
+.portal-mobile-title {
+  display: none !important;
+}
+
+
+.portal-logo-image {
+  height: 35px;
+  width: 35px;
+}
+
+
+.portal-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .portal-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .portal-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .portal-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .portal-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portal-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .portal-search-box.is-focused + .portal-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .portal-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .portal-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #2196F3;
+    }
+
+    .portal-navigation-active {
+      border-bottom: 4px solid #2196F3 !important;
+    }
+
+  .portal-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .portal-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .portal-drawer {
+    border-right: none;
+  }
+
+  .portal-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .portal-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .portal-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #2196F3;
+  }
+
+  .portal-drawer .mdl-layout-title {
+    position: relative;
+    background: #2196F3;
+    height: 160px;
+  }
+
+  .portal-drawer .portal-logo-image {
+    position: absolute;
+    bottom: 16px;
+  }
+
+.portal-be-together-section {
+  position: relative;
+  width: auto;
+  background-color: black;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #fefefe;
+  font-weight: 500;
+}
+
+.portal-slogan {
+  font-size: 40px;
+  padding-top: 160px;
+  color: #fefefe;
+  margin-top: 100px;
+  font-weight: 400;
+}
+
+.portal-sub-slogan {
+  font-size: 18px;
+  padding-top: 24px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.portal-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+  color: black;
+  background: white;
+  border-radius: 15px;
+}
+
+  .portal-create-character a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+  }
+
+.portal-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.portal-screens {
+  margin-left: 85px;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.portal-screen {
+  text-align: center;
+}
+
+.portal-screen .portal-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.portal-image-link {
+  text-decoration: none;
+}
+
+.portal-wear {
+  display: none;
+  width: 160px;
+  margin-right: 32px;
+}
+
+.portal-wear .portal-screen-image {
+  width: 40%;
+  z-index: 1;
+}
+
+
+.portal-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .portal-phone .portal-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.portal-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .portal-tablet .portal-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .portal-tablet .portal-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.portal-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .portal-tv .portal-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.portal-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .portal-auto .portal-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.portal-wear-section {
+  position: relative;
+  background: url('images/wear.png') center 100% no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.portal-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.portal-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .portal-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.portal-link {
+  text-decoration: none;
+  color: #2196F3 !important;
+}
+
+  .portal-link:hover {
+    color: #2196F3 !important;
+  }
+
+  .portal-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.portal-alt-link {
+  text-decoration: none;
+  color: #2196F3 !important;
+  font-size: 16px;
+}
+
+  .portal-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .portal-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.portal-customized-section {
+  text-align: center;
+}
+
+.portal-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .portal-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.portal-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.portal-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .portal-more-section .portal-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.portal-card-container {
+}
+
+  .portal-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .portal-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .portal-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .portal-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .portal-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .portal-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .portal-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.portal-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .portal-footer a:hover {
+    color: #2196F3;
+  }
+
+  .portal-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .portal-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .portal-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .portal-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .portal-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.portal-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .portal-screens {
+    text-align: right;
+    margin-left: 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .portal-auth-wrapper {
+    padding: 0px;
+  }
+
+  .portal-wear {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+    width: 20px;
+  }
+
+  .portal-login-space {
+    padding: 50px 0px;
+  }
+
+  .portal-navigation-container {
+    display: none;
+  }
+
+  .mdl-layout__drawer-button {
+    display: table;
+  }
+
+  .portal-title {
+    display: none !important;
+  }
+
+  .portal-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .android.portal-search-box.is-focused ~ .portal-mobile-title,
+  .portal-search-box.is-focused + .portal-navigation-container + .portal-mobile-title {
+    opacity: 0;
+  }
+
+  .portal-more-button {
+    display: none;
+  }
+
+  .portal-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .portal-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .portal-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 200px;
+    color: white;
+  }
+
+  .portal-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+    color: white;
+  }
+
+  .portal-create-character {
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+    background: white;
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .portal-create-character img {
+    height: 12px;
+  }
+
+  .portal-fab {
+    display: none;
+  }
+
+  .portal-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .portal-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+.portal-focus:active {
+	border-color: #2196F3 !important;
+}
+
+.portal-focus:focus {
+	border-color: #2196F3 !important;
+}
