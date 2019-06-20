@@ -50,11 +50,21 @@ a img{
 }
 
 .portal-auth-wrapper {
-  padding: 20px 0px !important;
+  padding: 20px !important;
+  display: flex;
+  flex-direction: column;
 }
 
-.mdl-textfield--expandable {
-  width: auto;
+.mdl-textfield {
+  width: 100% !important;
+}
+
+.mdl-textfield__input {
+  width: 100% !important;
+}
+
+.portal-link-btn {
+  width: 96% !important;
 }
 
 .portal-fab {
@@ -212,6 +222,26 @@ a img{
   padding-top: 24px;
   line-height: 22px;
   font-weight: 400;
+}
+
+.portal-auth-content {
+  margin: 0px !important;
+  padding: 0px !important;
+  display: flex;
+  height: 100% !important;
+} 
+
+.portal-auth-bg {
+  background: url('https://source.unsplash.com/random');
+  background-size: cover;
+  flex: 1;
+  height: 100%;
+}
+
+.portal-auth-form {
+  flex: 1;
+  height: 100%;
+  padding: 35px;
 }
 
 .portal-create-character {
@@ -487,7 +517,11 @@ a img{
 
 
 /**** Mobile layout ****/
-@media (max-width: 900px) {
+@media only screen and (max-width: 400px) {
+  .portal-hidden-mobile {
+    display: none !important;
+  }
+
   .portal-screens {
     text-align: right;
     margin-left: 0px;
