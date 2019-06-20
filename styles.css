@@ -55,8 +55,14 @@ a img{
   flex-direction: column;
 }
 
-.mdl-textfield {
+.portal-focus {
   width: 100% !important;
+}
+
+.portal-auth-bottom-items {
+  padding: 20px;
+  margin-top: 10%;
+  display: flex;
 }
 
 .mdl-textfield__input {
