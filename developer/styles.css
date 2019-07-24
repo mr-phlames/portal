@@ -72,8 +72,9 @@ a img{
 
 
 .portal-logo-image {
+  margin-left: -30px;
   height: 35px;
-  width: 35px;
+  width: 90px;
 }
 
 

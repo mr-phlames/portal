@@ -228,6 +228,8 @@ a img{
   padding-top: 24px;
   line-height: 22px;
   font-weight: 400;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .portal-auth-content {
@@ -436,6 +438,19 @@ a img{
   height: 400px;
 }
 
+.portal-exchange-section {
+  margin-top: 100px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.portal-exchange-section-image {
+  width: 200px !important;
+}
+
 .portal-more-section {
   padding: 80px 0;
   max-width: 1044px;
@@ -449,6 +464,8 @@ a img{
   }
 
 .portal-card-container {
+  /* lol */
+  top: 0;
 }
 
   .portal-card-container .mdl-card__media {
@@ -523,7 +540,19 @@ a img{
 
 
 /**** Mobile layout ****/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+  .portal-exchange-section {
+    flex-direction: column !important;
+  }
+
+  .portal-exchange-section-image {
+    margin-bottom: 50px;
+  }
+
+  .portal-exchange-section-text {
+    padding: 0px 3%;
+  }
+
   .portal-hidden-mobile {
     display: none !important;
   }
