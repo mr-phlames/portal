@@ -421,6 +421,10 @@ a img{
   text-align: center;
 }
 
+.portal-miss-pay-section {
+  background: #272727 !important;
+}
+
 .portal-customized-section-text {
   max-width: 500px;
   margin-left: auto;
@@ -440,6 +444,7 @@ a img{
 
 .portal-exchange-section {
   margin-top: 100px;
+  padding: 200px;
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-evenly !important;
@@ -448,7 +453,33 @@ a img{
 }
 
 .portal-exchange-section-image {
-  width: 200px !important;
+  width: 250px !important;
+  margin-top: -50px !important;
+  margin-left: -80px !important;
+}
+
+.portal-exchange-section-image-two {
+  width: 250px !important;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: -50px !important;
+}
+
+.portal-exchange-section-text {
+  margin-right: -90px !important;
+}
+
+.portal-pay-section-image {
+  width: 250px !important;
+  margin-right: -60px !important;
+}
+
+.portal-pay-section-text {
+  margin-left: -90px !important;
+}
+
+.portal-miss-pay-section {
+  text-align: left !important;
 }
 
 .portal-more-section {
@@ -533,11 +564,22 @@ a img{
     top: 6px;
   }
 
+  .portal-security-image {
+    width: 80px !important;
+    margin-bottom: 10px;
+  }
 
 .portal-link-menu:hover {
   cursor: pointer;
 }
 
+.white-text-title {
+  color: #fff !important;
+}
+
+.white-text-sub-text {
+  color: #fff !important;
+}
 
 /**** Mobile layout ****/
 @media only screen and (max-width: 500px) {
@@ -545,11 +587,20 @@ a img{
     flex-direction: column !important;
   }
 
-  .portal-exchange-section-image {
-    margin-bottom: 50px;
+  .portal-exchange-section-image, .portal-pay-section-image {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: -100px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .portal-exchange-section-image-two {
+    display: none;
   }
 
   .portal-exchange-section-text {
+    margin: 0px !important;
+    width: 90vw !important;
     padding: 0px 3%;
   }
 
